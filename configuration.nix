@@ -25,6 +25,8 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
 
+  programs.sway.enable = true;
+
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -72,9 +74,7 @@
     curl
   ];
 
-  environment.interactiveShellInit = ''
-    alias neofetch='hyfetch -b fastfetch'
-  '';
+  services.flatpak.enable = true;
 
   services.resolved.enable = true;
 
@@ -94,7 +94,6 @@
     mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
     magicOrExtension = ''\x7fELF....AI\x02'';
   };
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

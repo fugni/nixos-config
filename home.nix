@@ -6,8 +6,10 @@ home.username = "fub";
 home.homeDirectory = "/home/fub";
 
 home.packages = with pkgs; [
-    firefox
     discord
+    vesktop
+
+    firefox
     github-desktop
     vscode
     filezilla
@@ -16,6 +18,8 @@ home.packages = with pkgs; [
     vlc
     r2modman
     modrinth-app
+
+    retroarchFull
 
     protontricks
     ventoy
